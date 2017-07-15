@@ -18,6 +18,26 @@ var projects =
     "projs" :
     [
         {
+            "title" : "Unscented Kalman Filter Project",
+            "dates" : "July 2017 - July 2017",
+            "description" : "I built this Unscented Kalman filter to improve my original Extended Kalman filter. Instead of using linearization to predict the behavior of the system under investigation, I used the Unscented "+
+                "Transformation. This filter has some advantages when compared to the EKF, because the Unscented transformation describes the nonlinear system better than the linearization, hence this filter converges to the "+
+                "right solution more rapidly.",
+            "images" : ["https://github.com/CodyNicholson/Self-Driving_Car_Projects_Website/blob/master/images/ukfPredictedMeanAndCovarianceEquationsWeights.jpg?raw=true","https://github.com/CodyNicholson/Self-Driving_Car_Projects_Website/blob/master/images/ukfUpdate.jpg?raw=true"],
+            "captions": ["These are the equations I used for the predict step of my Unscented Kalman filter","These are the equations I used in the update step of my Unscented Kalman filter"],
+            "link": "https://github.com/CodyNicholson/Unscented_Kalman_Filter_Project"
+        },
+        {
+            "title" : "Extended Kalman Filter Project",
+            "dates" : "June 2017",
+            "description" : "I built this Extended Kalman filter using C++ to estimate the state of a moving object of interest with noisy lidar and radar measurements. A standard Kalman filter can only handle linear equations. "+
+                "To make state estimation on nonlinear systems I had to refactor the original Kalman Filter into an Extended Kalman filter that can linearize the system under investigation around its current state and force the "+
+                "filter to use this linearized version of the system as a model.",
+            "images" : ["https://github.com/CodyNicholson/Self-Driving_Car_Projects_Website/blob/master/images/KalmanFilterAlgMap.jpg?raw=true","https://github.com/CodyNicholson/Self-Driving_Car_Projects_Website/blob/master/images/predUpdate.jpg?raw=true"],
+            "captions": ["This is a map of the standard Kalman Filer algorithm","This represents the predict-update loop that the Kalman Filter uses to gain information about its location instantaneously"],
+            "link": "https://github.com/CodyNicholson/Extended_Kalman_Filter_Project"
+        },
+        {
             "title" : "Vehicle Detection Project",
             "dates" : "May 2017",
             "description" : "I created this project (part of the Udacity Self-Driving Car Nanodegree program) to teach a self-driving car to detect other vehicles on the road. First, I performed a Histogram of Oriented"+

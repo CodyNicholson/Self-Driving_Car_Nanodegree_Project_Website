@@ -29,7 +29,7 @@ var projects =
         },
         {
             "title" : "Extended Kalman Filter Project",
-            "dates" : "June 2017- July 2017",
+            "dates" : "June 2017 - July 2017",
             "description" : "I built this Extended Kalman filter using C++ to estimate the state of a moving object of interest with noisy lidar and radar measurements. A standard Kalman filter can only handle linear equations. "+
                 "To make state estimation on nonlinear systems I had to refactor the original Kalman Filter into an Extended Kalman filter that can linearize the system under investigation around its current state and force the "+
                 "filter to use this linearized version of the system as a model.",

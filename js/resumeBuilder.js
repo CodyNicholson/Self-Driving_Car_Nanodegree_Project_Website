@@ -18,6 +18,34 @@ var projects =
     "projs" :
     [
         {
+            "title" : "Model Predictive Controller Project",
+            "dates" : "August 2017",
+            "description" : "In this project I created a Model Predictive Controller (MPC) to simulate different actuator inputs, predict the resulting trajectory, and select the trajectory with a minimum cost. The enables "+
+                "the car to turn in the most efficient and safe way.",
+            "images" : ["https://github.com/CodyNicholson/Self-Driving_Car_Projects_Website/blob/master/images/pidContolSim.jpg?raw=true","https://github.com/CodyNicholson/Self-Driving_Car_Projects_Website/blob/master/images/mpcAlg.jpg?raw=true","https://github.com/CodyNicholson/Self-Driving_Car_Projects_Website/blob/master/images/lengthAndDuration.jpg?raw=true"],
+            "captions": ["This is the car running in the simulator making decisions for itself using the MPC I made","This is the algorithm that the MPC uses to simulate actuator inputs to predict where the car will be so it can make the best decisions","The orange line shows where the MPC might predict the car will be in future time steps"],
+            "link": "https://github.com/CodyNicholson/Model_Predictive_Control_Project"
+        },
+        {
+            "title" : "PID Controller Project",
+            "dates" : "July 2017 - August 2017",
+            "description" : "In this project I created a PID controller to handle the self-driving car's three actuators: steering, throttle, and brake. This controller corrects the car's driving when it makes mistakes - "+
+                "like overshooting turns. Control is how we use the steering, throttle, and brakes to move a car where we want it to go. When we turn through an intersection we use our intuition and experience to determine "+
+                "how hard to steer, when to accelerate, and whether to step on the brakes. Control algorithms are often called 'controllers' and one of the most common and fundamental controllers is the PID Controller.",
+            "images" : ["https://github.com/CodyNicholson/Self-Driving_Car_Projects_Website/blob/master/images/pidContolSim.jpg?raw=true","https://github.com/CodyNicholson/Self-Driving_Car_Projects_Website/blob/master/images/pidControllerFormula.jpg?raw=true","https://github.com/CodyNicholson/Self-Driving_Car_Projects_Website/blob/master/images/pidGraph.jpg?raw=true"],
+            "captions": ["This is the car making decisions on its own in the simulator using the PID Controller I created","This is the formula for the PID Controller","This is a graph of the various performances of the each controllers"],
+            "link": "https://github.com/CodyNicholson/PID_Control_Project"
+        },
+        {
+            "title" : "Kidnapped Vehicle Project",
+            "dates" : "July 2017",
+            "description" : "In this project I created a particle filter that was used to localize a self-driving car so that it can be easily tracked down if stolen. A particle filter is another algorithm used for estimating the "+
+                "state of a system. It's main advantages are that it is easy to implement and it is the most flexible algorithm for estimating the state of a system.",
+            "images" : ["https://github.com/CodyNicholson/Self-Driving_Car_Projects_Website/blob/master/images/particles.PNG?raw=true","https://github.com/CodyNicholson/Self-Driving_Car_Projects_Website/blob/master/images/particles2.PNG?raw=true","https://github.com/CodyNicholson/Self-Driving_Car_Projects_Website/blob/master/images/flowChart.PNG?raw=true"],
+            "captions": ["Upon initialization the particles are uniformly distributed across the entire map","After seeing all of the landmarks around it the particles cluster around the areas where the car is most likely to be","This is a flow chart of how the algorithm collects data and uses it to predict its position and update that prediction over and over"],
+            "link": "https://github.com/CodyNicholson/Kidnapped_Vehicle_Project"
+        },
+        {
             "title" : "Unscented Kalman Filter Project",
             "dates" : "July 2017",
             "description" : "I built this Unscented Kalman filter to improve my original Extended Kalman filter. Instead of using linearization to predict the behavior of the system under investigation, I used the Unscented "+

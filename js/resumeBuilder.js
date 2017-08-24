@@ -22,7 +22,7 @@ var projects =
             "dates" : "August 2017",
             "description" : "In this project I created a Model Predictive Controller (MPC) to simulate different actuator inputs, predict the resulting trajectory, and select the trajectory with a minimum cost. The enables "+
                 "the car to turn in the most efficient and safe way.",
-            "images" : ["https://github.com/CodyNicholson/Self-Driving_Car_Projects_Website/blob/master/images/pidContolSim.jpg?raw=true","https://github.com/CodyNicholson/Self-Driving_Car_Projects_Website/blob/master/images/mpcAlg.jpg?raw=true","https://github.com/CodyNicholson/Self-Driving_Car_Projects_Website/blob/master/images/lengthAndDuration.jpg?raw=true"],
+            "images" : ["https://github.com/CodyNicholson/Self-Driving_Car_Projects_Website/blob/master/images/mpcControllerSimPic.jpg?raw=true","https://github.com/CodyNicholson/Self-Driving_Car_Projects_Website/blob/master/images/mpcAlg.jpg?raw=true","https://github.com/CodyNicholson/Self-Driving_Car_Projects_Website/blob/master/images/lengthAndDuration.jpg?raw=true"],
             "captions": ["This is the car running in the simulator making decisions for itself using the MPC I made","This is the algorithm that the MPC uses to simulate actuator inputs to predict where the car will be so it can make the best decisions","The orange line shows where the MPC might predict the car will be in future time steps"],
             "link": "https://github.com/CodyNicholson/Model_Predictive_Control_Project"
         },

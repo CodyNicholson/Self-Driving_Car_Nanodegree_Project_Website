@@ -41,7 +41,7 @@ var projects =
             "dates" : "July 2017",
             "description" : "In this project I created a particle filter that was used to localize a self-driving car so that it can be easily tracked down if stolen. A particle filter is another algorithm used for estimating the "+
                 "state of a system. It's main advantages are that it is easy to implement and it is the most flexible algorithm for estimating the state of a system.",
-            "images" : ["https://github.com/CodyNicholson/Self-Driving_Car_Projects_Website/blob/master/images/particles.PNG?raw=true","https://github.com/CodyNicholson/Self-Driving_Car_Projects_Website/blob/master/images/particles2.PNG?raw=true","https://github.com/CodyNicholson/Self-Driving_Car_Projects_Website/blob/master/images/flowChart.PNG?raw=true"],
+            "images" : ["https://github.com/CodyNicholson/Self-Driving_Car_Projects_Website/blob/master/images/particles.jpg?raw=true","https://github.com/CodyNicholson/Self-Driving_Car_Projects_Website/blob/master/images/particles2.jpg?raw=true","https://github.com/CodyNicholson/Self-Driving_Car_Projects_Website/blob/master/images/flowChart.jpg?raw=true"],
             "captions": ["Upon initialization the particles are uniformly distributed across the entire map","After seeing all of the landmarks around it the particles cluster around the areas where the car is most likely to be","This is a flow chart of how the algorithm collects data and uses it to predict its position and update that prediction over and over"],
             "link": "https://github.com/CodyNicholson/Kidnapped_Vehicle_Project"
         },

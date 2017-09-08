@@ -89,9 +89,9 @@ var projects =
         {
             "title" : "Behavioral Cloning Project",
             "dates" : "May 2017",
-            "description" : "In this project I used the simulator provided by Udacity to collect data of good driving behavior. I then built a convolution neural network in Keras that predicts steering angles from images."+
-                "Then I trained and validated the model with a training and validation set. After that I tested that the model successfully drives around the track without leaving the road, and posted a video of this on "+
-                "youtube that there is a link for in the project summary on github. Lastly, I summarized the results with a written report.",
+            "description" : "In this project I used the simulator provided by Udacity to collect data of good driving behavior. I then built a deep convolutional neural network in Keras to predict steering angles by using the captured images."+
+                "I then trained and validated the model by splitting my testing data into a training and validation set. After, I tested that the car successfully drives around the track without leaving the road. I posted a video of this on "+
+                "YouTube. The link is in the project summary README.md file on github.",
             "images" : ["https://github.com/CodyNicholson/Self-Driving_Car_Projects_Website/blob/master/images/bcloning_Drive_Test.jpg?raw=true","https://github.com/CodyNicholson/Self-Driving_Car_Projects_Website/blob/master/images/center_lane_driving.jpg?raw=true","https://github.com/CodyNicholson/Self-Driving_Car_Projects_Website/blob/master/images/training_vs_validation.jpg?raw=true"],
             "captions": ["In this image the car is driving itself, and in the console you can see the values for the car's angle and speed values","This is an example of a training image that was used to teach the model what good driving looks like","In this image you can see that the mean squared error is only a bit lower when testing on the validation set than it was for the training set"],
             "link": "https://github.com/CodyNicholson/Behavioral_Cloning_Project"

@@ -124,13 +124,12 @@ projects.display = function()
 {
     for (p in projects.projs)
     {
-        // Creates a div with class work-entry
+        // Creates a div with class project-entry
         $("#projects").append(HTMLprojectStart);
-        // Creates variables to hold the project information for each job
+        // Creates variables to hold the project information
         var formattedTitle = HTMLprojectTitle.replace("%data%", projects.projs[p].title).replace("%link%", projects.projs[p].link);
         var formattedDates = HTMLprojectDates.replace("%data%", projects.projs[p].dates);
         var formattedDescription = HTMLprojectDescription.replace("%data%", projects.projs[p].description);
-        // Adds the Employment description to the newly created div
         $(".project-entry:last").append(formattedTitle).append(formattedDates).append(formattedDescription);
         if (projects.projs[p].images.length > 0)
         {
@@ -158,13 +157,6 @@ $("#header").prepend(formattedRole).prepend(formattedName).append(formattedwelco
 $("#topContacts").append(formattedEmail).append(formattedGithub).append(formattedlinkedIn).append(formattedLocation);
 $("#footerContacts").append(formattedEmail).append(formattedGithub).append(formattedlinkedIn).append(formattedLocation);
 
-
 // Runs the display functions
 projects.display();
 
-// Adds all my skills to index.html
-for(i = 0; i < bio.skills.length; i++)
-{
-    var formattedSkill = HTMLskills.replace("%data%", bio.skills[i]);
-    $("#skills").append(formattedSkill);
-}

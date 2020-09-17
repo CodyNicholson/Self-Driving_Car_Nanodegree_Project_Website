@@ -1,22 +1,17 @@
-var bio =
-{
+var bio = {
     "name" : "Self-Driving Car Nanodegree Projects",
     "role" : "By: Cody Nicholson",
-    "contacts" :
-    {
+    "contacts" : {
         "email" : "codynicholson96@gmail.com",
         "github" : "CodyNicholson",
-        "twitter" : "@CodyLiam7",
-        "location" : ["Schaumburg, IL", "Lincoln Park, IL"],
-        "linkedIn" : "codynicholson"
+        "location" : "Chicago, IL",
+        "linkedIn" : "/in/codynicholson/"
     },
-    "welcomeMessage" : "This is a list of all the projects I completed while enrolled in Udacity's Self-Driving Car Nanodegree"
+    "welcomeMessage" : "This is a list of all the projects I completed while enrolled in Udacity's Self-Driving Car Nanodegree program"
 };
 
-var projects =
-{
-    "projs" :
-    [
+var projects = {
+    "projs" : [
         {
             "title" : "Model Predictive Controller Project",
             "dates" : "August 2017",
@@ -120,21 +115,15 @@ var projects =
     ]
 };
 
-projects.display = function()
-{
-    for (p in projects.projs)
-    {
-        // Creates a div with class project-entry
+projects.display = function() {
+    for (p in projects.projs) {
         $("#projects").append(HTMLprojectStart);
-        // Creates variables to hold the project information
         var formattedTitle = HTMLprojectTitle.replace("%data%", projects.projs[p].title).replace("%link%", projects.projs[p].link);
         var formattedDates = HTMLprojectDates.replace("%data%", projects.projs[p].dates);
         var formattedDescription = HTMLprojectDescription.replace("%data%", projects.projs[p].description);
         $(".project-entry:last").append(formattedTitle).append(formattedDates).append(formattedDescription);
-        if (projects.projs[p].images.length > 0)
-        {
-            for (i in projects.projs[p].images)
-            {
+        if (projects.projs[p].images.length > 0) {
+            for (i in projects.projs[p].images) {
                 var formattedImage = HTMLprojectImage.replace("%data%", projects.projs[p].images[i]).replace("%link%", projects.projs[p].link);
                 formattedImage = formattedImage.replace("%caption%", projects.projs[p].captions[i]);
                 $(".project-entry:last").append(formattedImage);
@@ -151,12 +140,10 @@ var formattedGithub = HTMLgithub.replace("%data%", bio.contacts.github);
 var formattedlinkedIn = HTMLlinkedIn.replace("%data%", bio.contacts.linkedIn);
 
 var formattedwelcomeMessage = HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage);
-var formattedLocation = HTMLlocation.replace("%data%", bio.contacts.location[0]);
+var formattedLocation = HTMLlocation.replace("%data%", bio.contacts.location);
 
 $("#header").prepend(formattedRole).prepend(formattedName).append(formattedwelcomeMessage).prepend(HTMLreturnHome);
 $("#topContacts").append(formattedEmail).append(formattedGithub).append(formattedlinkedIn).append(formattedLocation);
 $("#footerContacts").append(formattedEmail).append(formattedGithub).append(formattedlinkedIn).append(formattedLocation);
 
-// Runs the display functions
 projects.display();
-
